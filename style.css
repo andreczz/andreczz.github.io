@@ -1,0 +1,291 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #f7f6f2;
+    color: #2d2d2d;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    background-color: #ffffff;
+    padding: 55px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.topo h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    color: #222;
+}
+
+.topo h1 span {
+    font-style: italic;
+    color: #54788f;
+}
+
+.topo p {
+    margin-top: 8px;
+    color: #777;
+}
+
+
+/* =========================
+   INTRODUÇÃO
+========================= */
+
+.introducao {
+    padding: 80px 0 45px;
+}
+
+.subtitulo {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #54788f;
+    margin-bottom: 8px;
+}
+
+.introducao h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.introducao > p:last-child {
+    max-width: 650px;
+    color: #666;
+}
+
+
+/* =========================
+   LISTA DE POSTS
+========================= */
+
+.posts {
+    padding-bottom: 100px;
+}
+
+.card {
+    background-color: white;
+    padding: 42px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.card-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.numero-post {
+    color: #54788f;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.data {
+    color: #999;
+    font-size: 13px;
+}
+
+.card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    max-width: 700px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BOTÃO "LER POST"
+========================= */
+
+.botao {
+    display: inline-block;
+    text-decoration: none;
+    color: #54788f;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.botao:hover {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   POST COMPLETO
+========================= */
+
+.post-completo {
+    background: white;
+
+    max-width: 850px;
+
+    margin: 70px auto;
+
+    padding: 55px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.post-completo h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-bottom: 40px;
+}
+
+.post-completo h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+.post-completo p {
+    margin-bottom: 18px;
+
+    color: #555;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar {
+    display: inline-block;
+
+    margin-bottom: 35px;
+
+    color: #777;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.voltar:hover {
+    color: #54788f;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    border-top: 1px solid #e5e5e5;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   Ajustes para celular
+========================= */
+
+@media (max-width: 600px) {
+
+    .topo {
+        padding: 35px 0;
+    }
+
+    .topo h1 {
+        font-size: 32px;
+    }
+
+    .introducao {
+        padding: 55px 0 35px;
+    }
+
+    .introducao h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 28px;
+    }
+
+    .card h3 {
+        font-size: 25px;
+    }
+
+    .card-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .post-completo {
+        margin: 35px auto;
+        padding: 28px;
+    }
+
+    .post-completo h2 {
+        font-size: 30px;
+    }
+
+    .post-completo h3 {
+        font-size: 22px;
+    }
+
+    .post-completo p {
+        font-size: 16px;
+    }
+}
