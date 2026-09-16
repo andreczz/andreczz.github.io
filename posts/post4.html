@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Por que uma imagem fica pixelada quando damos muito zoom?</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="container">
+            <h1>Blog de <span>Computação Visual</span></h1>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <article class="post-completo">
+
+            <a href="../index.html" class="voltar">
+                ← Voltar para os posts
+            </a>
+
+            <p class="subtitulo">
+                POST 04 • 15 DE SETEMBRO DE 2026
+            </p>
+
+            <h2>
+                Por que uma imagem fica pixelada quando damos muito zoom?
+            </h2>
+
+            <p>
+                Provavelmente todo mundo já tentou aumentar muito uma imagem pequena
+                e percebeu que, depois de certo ponto, ela começa a ficar cheia de
+                quadradinhos e perde bastante qualidade.
+            </p>
+
+            <p>
+                Isso acontece porque uma imagem digital é formada por pixels.
+                Quando aumentamos muito uma imagem, não existem informações suficientes
+                para preencher todos os novos espaços que aparecem. Por isso, o
+                computador precisa encontrar alguma maneira de definir como serão
+                esses novos pixels.
+            </p>
+
+            <p>
+                Uma das formas de fazer isso é utilizando interpolação. Um método
+                simples é utilizar como referência o pixel mais próximo da imagem
+                original. Porém, quando aumentamos demais a imagem, isso pode deixar
+                os pixels mais aparentes e criar aquele efeito de imagem "quadriculada".
+            </p>
+
+            <p>
+                Existem também outras formas de fazer essa ampliação tentando deixar
+                a transição entre os pixels mais suave. Mesmo assim, aumentar uma
+                imagem não significa criar todos os detalhes que não existiam
+                originalmente.
+            </p>
+
+            <p>
+                Achei interessante entender isso porque é algo que vemos com frequência
+                ao aumentar fotos, imagens da internet ou até mesmo imagens em jogos.
+                Antes eu só pensava que a imagem "perdia qualidade", mas agora entendo
+                um pouco melhor o que acontece por trás desse processo.
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+        <p>Computação Visual • 2026</p>
+    </footer>
+
+</body>
+
+</html>
